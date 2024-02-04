@@ -1,37 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <ol>
-            <li class="row">
-                <a href="/item">
-                    <h4 class="title">
-                        Thread 1
-                    </h4>
-                    <div class="bottom">
-                        <p class="timestamp">
-                            10/10/2020
-                        </p>
-                        <p class="comment-count">
-                            4 comments
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li class="row">
-                <a href="/item">
-                    <h4 class="title">
-                        Thread 2
-                    </h4>
-                    <div class="bottom">
-                        <p class="timestamp">
-                            10/9/2020
-                        </p>
-                        <p class="comment-count">
-                            10 comments
-                        </p>
-                    </div>
-                </a>
-            </li>
-        </ol>
-    </body>
+<head>
+    <title>Forum</title>
+</head>
+<body>
+    <h1>Welcome to the Forum</h1>
+    <ul>
+        <!-- Display threads dynamically -->
+        <li><a href="/thread/1">Thread 1</a></li>
+        <li><a href="/thread/2">Thread 2</a></li>
+        <!-- Add more threads here -->
+    </ul>
+    <!-- Add form for creating new threads -->
+    <form action="/create_thread" method="post">
+        <input type="text" name="title" placeholder="Thread Title">
+        <textarea name="content" placeholder="Thread Content"></textarea>
+        <button type="submit">Create Thread</button>
+    </form>
+</body>
 </html>
