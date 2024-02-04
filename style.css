@@ -1,1 +1,109 @@
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li, form, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Page title styles */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Thread list styles */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Thread link styles */
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Form styles */
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Thread page styles */
+.comments {
+    margin-top: 20px;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comment p {
+    margin-bottom: 5px;
+}
+
+/* Textarea for comment */
+.comments textarea {
+    width: calc(100% - 20px); /* Adjust for comment padding */
+}
+
+/* Styling for thread title and content */
+h1, p {
+    margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    input[type="text"],
+    textarea {
+        width: calc(100% - 20px); /* Adjust for padding */
+    }
+
+    button {
+        width: 100%;
+    }
+}
 
