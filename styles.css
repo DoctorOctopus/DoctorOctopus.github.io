@@ -2,6 +2,6 @@ body{
   background-image: url(backgroundpic.jpg);
 }
 
-h1, p {
+h1, h2, p {
   text-align: center;
 }
